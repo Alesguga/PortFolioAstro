@@ -1,0 +1,45 @@
+---
+import Cv from "../icons/Cv.astro";
+import Gmail from "../icons/Gmail.astro";
+import Instagram from "../icons/Instagram.astro";
+---
+
+<footer class="rounded-xl bg-gray-900 m-4">
+    <div
+        class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+    >
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+            >© 2024 <a href="" class="hover:underline"
+                >Programado por Alejandro Gutiérrez</a
+            >. All Rights Reserved.
+        </span>
+        <ul
+            class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
+        >
+            <li>
+                <a
+                    href="mailto:alexgutygalan11@gmail.com"
+                    class="hover:underline me-4 md:me-6 items-center gap-1 flex"
+                    ><Gmail class="size-4" /> Contáctame</a
+                >
+            </li>
+            <li>
+                <a
+                    href="../../public/CV Alejandro Gutierrez.pdf"
+                    download=""
+                    class="hover:underline me-4 md:me-6 items-center gap-1 flex"
+                    ><Cv class="size-5" /> Mi CV</a
+                >
+            </li>
+            <li>
+                <a
+                    href="https://www.instagram.com/aleex_gutierrezz/"
+                    target="_blank"
+                    rel="noopener"
+                    class="hover:underline me-4 md:me-6 items-center gap-1 flex"
+                    ><Instagram class="size-4" /> Mi Instagram</a
+                >
+            </li>
+        </ul>
+    </div>
+</footer>

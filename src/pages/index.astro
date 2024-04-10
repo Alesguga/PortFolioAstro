@@ -1,0 +1,101 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import Badge2 from "../components/Badge2.astro";
+import LinkedIn from "../icons/LinkedIn.astro";
+import SocialPill from "../components/SocialPill.astro";
+import GitHub from "../icons/GitHub.astro";
+import Mailicon from "../icons/MailIcon.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import BriefCase from "../icons/BriefCase.astro";
+import CodeIcon from "../icons/CodeIcon.astro";
+import Projects from "../components/Projects.astro";
+---
+
+<Layout title="Mi portFolio">
+	<main class="px-2">
+		<SectionContainer class="py-44 pb-24">
+			<img
+				class="rounded-full size-12"
+				src="../../cropped_image.jpg"
+				alt="logo que me hizoines"
+			/>
+			<h1
+				class="text-white text-4xl md:text-4xl font-bold flex pb-3.5 flex-row gap-x-4"
+			>
+				Hola soy Alex <div class="flex justify-center items-center">
+					<a
+						href="https://www.linkedin.com/in/alejandro-guti%C3%A9rrez-4b863b295/"
+						target="_blank"
+						rel="noopener"
+						class="flex justify-center items-center"
+					>
+						<Badge>Disponible a contratación</Badge>
+						<Badge2>En periodo de FCTs</Badge2>
+					</a>
+				</div>
+			</h1>
+			<h2 class="text-xl opacity-90 text-wrap">
+				¡Hola! Soy Alex, actualmente estoy finalizando el grado superior
+				de Desarrollo de Aplicaciones Multiplataforma y estoy interesado
+				en lenguajes como <a
+					href="https://kotlinlang.org/"
+					target="_blank"
+					rel="noopener"
+					class="text-purple-400">Kotlin</a
+				> y <a
+					href="https://www.java.com/es/"
+					target="_blank"
+					rel="noopener"
+					class="text-red-500">Java</a
+				> (Desarrollo web). También estoy aprendiendo <a
+					href="https://python.org/"
+					target="_blank"
+					rel="noopener"
+					class="text-yellow-300">Python</a
+				>, <a
+					href="https://www.oracle.com/es/database/sqldeveloper/"
+					target="_blank"
+					rel="noopener"
+					class="text-gray-500">SQL</a
+				> y <a
+					href="https://astro.build/"
+					target="_blank"
+					rel="noopener"
+					class="text-orange-600">Astro.</a
+				>
+			</h2>
+			<nav class="flex gap-x-2 mt-5">
+				<SocialPill
+					href="https://www.linkedin.com/in/alejandro-guti%C3%A9rrez-4b863b295/"
+				>
+					<LinkedIn class="w-4 h-4" />
+					LinkedIn
+				</SocialPill>
+				<SocialPill href="https://github.com/Alesguga">
+					<GitHub class="w-4 h-4" />
+					GitHub
+				</SocialPill>
+				<SocialPill href="mailto:alexgutygalan11@gmail.com">
+					<Mailicon class="w-4 h-4" />
+					alexgutygalan11@gmail.com
+				</SocialPill>
+			</nav>
+		</SectionContainer>
+		<SectionContainer class="pt-24" id="experiencia">
+			<h2 class="text-3xl font-semibold flex gap-x-2 items-center">
+				<BriefCase class="size-7" />
+				Experiencia laboral
+			</h2>
+			<Experience />
+		</SectionContainer>
+		<SectionContainer class="pt-24" id="proyectos">
+			<h2 class="text-3xl font-semibold flex pb-2 gap-x-2 items-center">
+				<CodeIcon class="size-8" />
+				Proyectos
+			</h2>
+			<Projects />
+		</SectionContainer>
+	</main>
+</Layout>
