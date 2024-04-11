@@ -11,6 +11,7 @@ import SectionContainer from "../components/SectionContainer.astro";
 import BriefCase from "../icons/BriefCase.astro";
 import CodeIcon from "../icons/CodeIcon.astro";
 import Projects from "../components/Projects.astro";
+import User from "../icons/User.astro";
 ---
 
 <Layout title="Mi portFolio">
@@ -96,6 +97,33 @@ import Projects from "../components/Projects.astro";
 				Proyectos
 			</h2>
 			<Projects />
+		</SectionContainer>
+		<SectionContainer class="pt-24" id="sobre-mi">
+			<h2 class="text-3xl font-semibold flex items-center gap-x-2">
+				<User class="size-6" />
+				Sobre mi
+			</h2>
+			<figure
+				class="relative pt-6 transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+			>
+				<a href="#">
+					<img
+						class="rounded-md shadow-lg shadow-white/30"
+						src="../../public/more_cropped_image.jpg"
+						alt=""
+					/>
+				</a>
+			</figure>
+			<p class="text-sm pt-6 text-pretty">
+				Tengo también experiencia con HTML5, Bootstrap y Tailwind CSS.
+				Tengo conocimiento de despliegue de páginas web con HTTPS,
+				gestion de DNS y SSL mediante Azure y actualmente estoy
+				aprendiendo cómo hacerlo mediante AWS. He usado varios
+				workspaces y me adapto rápido. Acabo de comenzar a aprender como
+				hacer tu propia API con PHP y poder almacenarla en tu dominio.
+				Tambien estoy interesado en aprender en un futuro Swift para
+				poder programar para Apple de forma nativa.
+			</p>
 		</SectionContainer>
 	</main>
 </Layout>
