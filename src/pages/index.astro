@@ -16,7 +16,7 @@ import User from "../icons/User.astro";
 
 <Layout title="Mi portFolio">
 	<main class="px-2">
-		<SectionContainer class="py-44 pb-24">
+		<SectionContainer class="py-44 pb-24" id="top">
 			<img
 				class="rounded-full size-12"
 				src="../../cropped_image.jpg"
@@ -98,7 +98,7 @@ import User from "../icons/User.astro";
 			</h2>
 			<Projects />
 		</SectionContainer>
-		<SectionContainer class="pt-24" id="sobre-mi">
+		<SectionContainer class="pt-14" id="sobre-mi">
 			<h2 class="text-3xl font-semibold flex items-center gap-x-2">
 				<User class="size-6" />
 				Sobre mi
@@ -106,7 +106,7 @@ import User from "../icons/User.astro";
 			<figure
 				class="relative pt-6 transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
 			>
-				<a href="#">
+				<a href="#top">
 					<img
 						class="rounded-md shadow-lg shadow-white/30"
 						src="../../public/more_cropped_image.jpg"
@@ -114,16 +114,21 @@ import User from "../icons/User.astro";
 					/>
 				</a>
 			</figure>
-			<p class="text-sm pt-6 text-pretty">
-				Tengo también experiencia con HTML5, Bootstrap y Tailwind CSS.
-				Tengo conocimiento de despliegue de páginas web con HTTPS,
-				gestion de DNS y SSL mediante Azure y actualmente estoy
-				aprendiendo cómo hacerlo mediante AWS. He usado varios
-				workspaces y me adapto rápido. Acabo de comenzar a aprender como
-				hacer tu propia API con PHP y poder almacenarla en tu dominio.
-				Tambien estoy interesado en aprender en un futuro Swift para
-				poder programar para Apple de forma nativa.
-			</p>
+			<div class="max-w-xl mx-auto bg-slate-600 hover:bg-slate-700 transition-colors duration-300 rounded-lg shadow-lg hover:shadow-2xl mt-4">
+				<div class="p-6">
+				  <p class="text-sm text-white/90 leading-relaxed tracking-wide text-justify">
+					Tengo también experiencia con HTML5, Bootstrap y Tailwind CSS.
+					Tengo conocimiento de despliegue de páginas web con HTTPS,
+					gestión de DNS y SSL mediante Azure y actualmente estoy
+					aprendiendo cómo hacerlo mediante AWS. He usado varios
+					workspaces y me adapto rápido. Acabo de comenzar a aprender cómo
+					hacer tu propia API con PHP y poder almacenarla en tu dominio.
+					También aprendiendo Swift para poder hacer buenas Apps de iPhone
+					de forma nativa. 
+				  </p>
+				</div>
+			  </div>
+			  
 		</SectionContainer>
 	</main>
 </Layout>
