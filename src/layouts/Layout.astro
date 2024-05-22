@@ -10,7 +10,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="flex flex-col">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -37,8 +37,7 @@ const { title } = Astro.props;
 	body {
 		min-height: 100vh;
 		color: white;
-		display: flex;
-		flex-direction: column;
+
 		background-color: #050505;
 	}
 	@media (prefers-reduced-motion: reduce){
