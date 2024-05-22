@@ -13,14 +13,15 @@ import CodeIcon from "../icons/CodeIcon.astro";
 import Projects from "../components/Projects.astro";
 import User from "../icons/User.astro";
 import Kotlin from "../icons/Kotlin.astro";
-import Html from "../icons/Html.astro";
 import Java from "../icons/Java.astro";
 import Swift from "../icons/Swift.astro";
-import MySQL from "../icons/MySQL.astro";
 import BS5 from "../icons/BS5.astro";
+import Golang from "../icons/Golang.astro";
 import ReactN from "../icons/ReactN.astro";
 import Python from "../icons/Python.astro";
 import AstroSVG from "../icons/AstroSVG.astro";
+import Firebase from "../icons/Firebase.astro";
+import MySQL from "../icons/MySQL.astro";
 ---
 
 <Layout title="Mi portFolio">
@@ -148,18 +149,12 @@ import AstroSVG from "../icons/AstroSVG.astro";
 				<CodeIcon class="size-8" />
 				Mi Tech Stack
 			</h2>
-			<div class="container pt-6 mx-auto items-center">
+			<div class="container pt-6 mx-auto justify-center items-center">
 				<div class="flex flex-wrap">
 					<div class="w-full mt-3 md:w-1/3 px-2">
 						<PillStack>
 							<Kotlin class="size-7" />
 							<h3 class="text-xl text-white/90">Kotlin</h3>
-						</PillStack>
-					</div>
-					<div class="w-full mt-3 md:w-1/3 px-2">
-						<PillStack>
-							<Html class="size-7" />
-							<h3 class="text-xl text-white/90">Html</h3>
 						</PillStack>
 					</div>
 					<div class="w-full mt-3 md:w-1/3 px-2">
@@ -170,26 +165,8 @@ import AstroSVG from "../icons/AstroSVG.astro";
 					</div>
 					<div class="w-full mt-3 md:w-1/3 px-2">
 						<PillStack>
-							<Swift class="size-8" />
-							<h3 class="text-xl text-white/90">Switt</h3>
-						</PillStack>
-					</div>
-					<div class="w-full mt-3 md:w-1/3 px-2">
-						<PillStack>
-							<MySQL class="size-7" />
-							<h3 class="text-xl text-white/90">SQL</h3>
-						</PillStack>
-					</div>
-					<div class="w-full mt-3 md:w-1/3 px-2">
-						<PillStack>
-							<BS5 class="size-8" />
-							<h3 class="text-xl text-white/90">BS5</h3>
-						</PillStack>
-					</div>
-					<div class="w-full mt-3 md:w-1/3 px-2">
-						<PillStack>
-							<ReactN class="size-7" />
-							<h3 class="text-xl text-white/90">React Na</h3>
+							<Firebase class="size-7" />
+							<h3 class="text-xl text-white/90">Firebase</h3>
 						</PillStack>
 					</div>
 					<div class="w-full mt-3 md:w-1/3 px-2">
@@ -200,8 +177,48 @@ import AstroSVG from "../icons/AstroSVG.astro";
 					</div>
 					<div class="w-full mt-3 md:w-1/3 px-2">
 						<PillStack>
+							<ReactN class="size-7" />
+							<h3 class="text-xl text-white/90">Tailwind</h3>
+						</PillStack>
+					</div>
+					<div class="w-full mt-3 md:w-1/3 px-2">
+						<PillStack>
+							<BS5 class="size-8" />
+							<h3 class="text-xl text-white/90">BS5</h3>
+						</PillStack>
+					</div>
+					<div class="w-full mt-3 md:w-1/3 px-2">
+						<PillStack>
+							<MySQL class="size-8" />
+							<h3 class="text-xl text-white/90">SQL</h3>
+						</PillStack>
+					</div>
+
+				</div>
+			</div>
+			<div class="container pt-6 mx-auto items-center">
+				<h2 class="text-xl font-semibold flex items-center gap-x-2">
+					<CodeIcon class="size-8" />
+					Actualmente aprendiendo:
+				</h2>
+				<div class="flex flex-wrap">
+
+					<div class="w-full mt-3 md:w-1/3 px-2">
+						<PillStack>
 							<Python class="size-7" />
 							<h3 class="text-xl text-white/90">Python</h3>
+						</PillStack>
+					</div>
+					<div class="w-full mt-3 md:w-1/3 px-2">
+						<PillStack>
+							<Swift class="size-8" />
+							<h3 class="text-xl text-white/90">Swift</h3>
+						</PillStack>
+					</div>
+					<div class="w-full mt-3 md:w-1/3 px-2">
+						<PillStack>
+							<Golang class="size-8" />
+							<h3 class="text-xl text-white/90">Golang</h3>
 						</PillStack>
 					</div>
 				</div>
