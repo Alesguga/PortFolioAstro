@@ -1,4 +1,13 @@
-<a class={`rounded-full border border-white/10 flex justify-center items-center gap-x-2 py-5 px-12 bg-purple-800 hover:scale-95 transition`}
-    {...Astro.props}>
-    <slot />
-</a>
+<div class="items-center flex justify-center hover:scale-[1.03] transition">
+    <span class="relative inline-flex overflow-hidden rounded-lg p-[1px]">
+        <span
+            class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#A855F7_0%,#6D28D9_50%,#A855F7_100%)]"
+        ></span>
+        <div
+            class="inline-flex items-center justify-center w-full h-16 px-3 py-1 text-sm font-[300] rounded-lg gap-x-3 cursor-pointer bg-gray-800 text-white/80 backdrop-blur-3xl whitespace-nowrap"
+            style="min-width: 200px; max-width: 250px;"
+        >
+            <slot />
+        </div>
+    </span>
+</div>
